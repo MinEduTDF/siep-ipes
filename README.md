@@ -1,6 +1,6 @@
-# traes-cens
+# traes-ipes
 
-Sistema nominal integral para los CENS.
+Sistema nominal integral para los IPES.
 
 Instalación:
 
