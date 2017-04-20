@@ -1,0 +1,438 @@
+@import url(http://fonts.googleapis.com/css?family=Crete+Round);
+
+
+body {
+    background: linear-gradient(rgb(155, 155, 155), white);
+	margin-top: 80px;
+
+}
+
+#bg {
+	background-image: url("bg.png");
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 180px;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+
+/********** LOGIN *************/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#login  {
+	padding: 10px;
+	color: #000000;
+	background-color: #F2F2F2;
+	text-align: center;
+	border-style: solid;
+	border-color: rgba(169, 169, 169, 1);
+	border-width: 1px;
+	border-radius: 8px;
+/*	box-shadow: 5px 5px 5px #888888;*/
+	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+
+.img_login {
+	font-size: 6em;
+	color: #888888;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.titulo {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 24px;
+	padding: 3px;
+	background-color: #373737;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: linear-gradient(to top, rgba(55, 53, 53, 1) 6%, rgba(92, 92, 92, 1)100%);
+	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+
+#UserLoginForm {
+	font-size: 16px;
+}
+
+.submit {
+	padding: 30px 170px;
+}
+
+.btn.btn-success.btn-lg {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#bs-example-navbar-collapse-1 {
+}
+
+/********************************/
+
+/************* SECCIONES ********/
+.content {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.pagination {
+	width: 100%;
+	background-color: #C1C1C1;
+    border-radius: 8px;
+	text-align: center;
+}
+
+.TituloSec {
+font-family: 'Crete Round', serif;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 2px;
+	width: 200px;
+    text-transform: uppercase;
+    font-size: 18px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    background-color: #52AB52;
+    text-shadow: 2px 2px #6D6D6D; 
+ 	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+
+.subtitulo {
+	font-size: 16px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D66F39;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	background-color: #FF8646;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+
+.titulo_acordeon {
+	cursor:pointer;
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D66F39;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	background-color: #FF8646;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+.titulo_acordeon:hover {
+	background-color: #EB5505;
+	border-color: #AB3B00;
+	border-style: solid;
+	border-width: 1px;
+	}
+
+.titulo_acordeon_datos {
+	cursor:pointer;
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #B79057;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	background-color: #F9B554;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+.titulo_acordeon_datos:hover {
+	background-color: #FF8646;
+	border-color: #D66F39;
+	border-style: solid;
+	border-width: 1px;
+	}
+
+
+.unit {
+	width: 100%;
+	margin: 5px;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #C3C3C3;
+	padding:20px;
+	background-color: #ECECEC;
+
+}
+
+#ContenidoSec {
+	margin: auto;
+	padding: 20px;
+	background-color: #F2F2F2;
+	text-align: left;
+	border-style: solid;
+	border-color: rgba(169, 169, 169, 1);
+	border-width: 1px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+
+.lateral {
+	background-color: #F2F2F2;
+}
+
+.error-message {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F3661C;
+}
+
+.message {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(210, 243, 255);
+	background: #6FA7C3;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+
+.opcion {
+	margin: 2px;
+	font-size: 13px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C6CDE0;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.opcion:hover {
+    background-color: #DEDEDE;
+}
+
+.opcion a {
+	text-decoration: none;
+	color: #63657D;
+}
+
+.opcion a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+/********************************/
+
+/************ FOOTER *************/
+.footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #6E6E6E;
+	text-align: center;
+	font-size: 12px;
+}
+/********************************/
+
+/************ PERFIL *************/
+.perfil {
+	font-size: 17px;
+}
+/********************************/
+
+
+/******** BOOSTRAP MENU ***********/
+
+.navbar-header {
+	text-transform: uppercase;
+    font-size: 20;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.navbar-toggle { 
+	-webkit-transform: translateZ(0);
+}
+
+
+.navbar-custom {
+	background: linear-gradient(to top, rgba(55, 53, 53, 1) 6%, rgba(92, 92, 92, 1)100%);
+    color:#ffffff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  	border-style: solid;
+  	border-width: 2px;
+  	border-color: #8C8C8C;
+  	box-shadow: 6px 6px 0px rgba(32, 32, 32, 0.20);
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+  	text-transform: uppercase;
+  	font-size: 14px;
+  	font-weight: 500;
+  	letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    /*color: #ffffff;*/
+    color: #FCAC45 !important;
+	background-color:transparent;
+	font-weight: 700;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #8C8C8C;	
+}
+
+.nav .open>a, 
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: #7B7878;
+}
+
+.navbar-custom .navbar-brand {
+  	/*color:#eeeeee;*/
+  	text-transform: uppercase;
+  	font-size: 22px;
+  	color: #fff;
+  	font-weight: 900;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+  	border-radius: 0;
+}
+.navbar-custom .icon-bar {
+  	background-color: #4E4E4E;
+}
+
+.dropdown-menu>li>a {
+    text-transform: uppercase;
+    color: #EA5304;
+    font-weight: 400;
+}
+
+.dropdown-menu {
+	background-color: #ffffff;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+	color: #EA5304;
+}
+
+@media only screen and (max-width: 780px) {
+		.dropdown-menu>li>a {
+			    color: #33AF33;
+		}
+		.dropdown-menu>li>a:focus,
+		.dropdown-menu>li>a:hover {
+    			color: #33AF33;
+		}
+}
+/********************************/
+
+/** Scaffold View **/
+dl {
+	line-height: 2em;
+	margin: 0em 0em;
+	width: 100%;
+	background: #f4f4f4;
+}
+
+dt {
+	font-weight: bold;
+	padding-left: 4px;
+	vertical-align: top;
+	width: 10em;
+}
+dd {
+	margin-left: 10em;
+	margin-top: -2em;
+	vertical-align: top;
+	display: inline;
+}
+#content{
+	background: #fff;
+	clear: both;
+	color: #333;
+	padding: 10px 60px 40px 60px;
+	overflow: auto;
+}
+
+.oculto {
+	display: none;
+}
+
+ul.pagination li.active {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #fff; 
+    border: 1px solid #ddd;
+}
+/********************************/
+
+
+/******** ÍCONOS EN IMÁGENES ***********/
+span.checked{
+    background:transparent url(../css_images/checked.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+span.error{
+    background:transparent url(../css_images/error.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+/********************************/
+
+
+/******** LABELS CON ESTADOS ***********/
+span.label.label-danger {
+	font-size: 14px;
+}
+span.label.label-success {
+	font-size: 14px;
+}
+span.label.label-warning {
+	font-size: 14px;
+}
+span.label.label-info {
+	font-size: 14px;
+}
+span.label.label-default {
+	font-size: 14px;
+}

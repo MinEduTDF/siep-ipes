@@ -1,0 +1,40 @@
+{
+    "name": "traes",
+    "description": "Sistema Nominal de Alumnos para el nivel Inicial",
+    "type": "library",
+    "keywords": ["framework"],
+    "homepage": "https://github.com/MinEduTDF/traes-inicial",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ministerio de Educación de TDF",
+            "homepage": "https://github.com/MinEduTDF"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/MinEduTDF/traes-inicial/issues",
+        "forum": "http://stackoverflow.com/tags/cakephp",
+        "irc": "irc://irc.freenode.org/cakephp",
+        "source": "https://github.com/cakephp/cakephp"
+    },
+    "require": {
+        "cakephp/cakephp": "2.*.*",
+        "friendsofcake/cakepdf": "1.*.*",
+        "josegonzalez/cakephp-upload": "1.*.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "cakephp/debug_kit": "2.2.*",
+        "cakephp/cakephp-codesniffer": "2.*.*"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ],
+    "config": {
+        "vendor-dir": "Vendor/"
+    },
+    "scripts": {
+      "fixcs": "Vendor/bin/phpcbf --standard=CakePHP ./*/*.php",
+      "pull": "git pull origin master" 
+    }
+}
