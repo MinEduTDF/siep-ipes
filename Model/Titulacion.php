@@ -107,10 +107,10 @@ class Titulacion extends AppModel {
                         )
                 ),
 				   'carga_horaria_en' => array(
-                           'required' => array(
+               'required' => array(
 						   'rule' => 'notBlank',
 						   'required' => 'create',       
-                           'message' => 'Indicar una opción.'
+               'message' => 'Indicar una opción.'
                            )
                 ),
 				   'carga_horaria' => array(

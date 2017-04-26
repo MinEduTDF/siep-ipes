@@ -71,19 +71,21 @@ class User extends AppModel {
 		)
 	),
 	'email' => array(
-		'required' => array(
-			'rule' => array('email', true),    
-			'message' => 'Ingrese un email válido'    
+        'required' => array(
+		   'rule' => 'notBlank',
+            'required' => 'create',
+		    'message' => 'Indicar un Email.'
 		),
-		'isUnique' => array(
+		'email' => array(
+            'rule' => 'email',
+            'allowEmpty' => true,
+            'message' => 'Indicar un formato válido.'
+        ),
+        'isUnique' => array(
 			 'rule' => 'isUnique',
 			 'message' => 'Este email está siendo usado.'
-		 ),
-		'between' => array( 
-			'rule' => array('between', 6, 60), 
-			'message' => 'El email debe contener entre 6 y 60 caracteres'
 		)
-	),
+    ),
 	'role' => array(
 		'valid' => array(
 			'rule' => array('inList', array('superadmin' ,'admin', 'usuario')),

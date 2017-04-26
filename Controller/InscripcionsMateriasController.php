@@ -34,7 +34,7 @@ class InscripcionsMateriasController extends AppController {
         $ciclos = $this->Ciclo->find('list', array('fields'=>array('nombre'), 'conditions' => array('id' => $ciclosId)));
         // Carga el combobox de los cursos según la institución correspondiente.
         if($this->Auth->user('role') === 'admin') {
-          $cursos = $this->InscripcionsMateria->Materia->find('list', array('fields'=>array('id', 'alia'), 'conditions' => array('centro_id' => $userCentroId)));    
+          $materias = $this->InscripcionsMateria->Materia->find('list', array('fields'=>array('id', 'alia')));    
         } else {
           $materias = $this->InscripcionsMateria->Materia->find('list', array('fields'=>array('id', 'alia')));  
         }	

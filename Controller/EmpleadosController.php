@@ -5,7 +5,7 @@ class EmpleadosController extends AppController {
 
 	var $name = 'Empleados';
     public $helpers = array('Form', 'Time', 'Js', 'TinyMCE.TinyMCE');
-	public $components = array('Session', 'Paginator', 'RequestHandler');
+	public $components = array('Session', 'RequestHandler');
 	var $paginate = array('Empleado' => array('limit' => 3, 'order' => 'Empleado.id DESC'));
 	
     public function beforeFilter() {
@@ -17,8 +17,9 @@ class EmpleadosController extends AppController {
     }
 
     function index() {
-		//$this->Empleado->recursive = 0;
-		$this->set('empleados', $this->paginate());
+		$this->Empleado->recursive = 0;
+		$this->paginate['Empleado']['limit'] = 4;
+		$this->paginate['Empleado']['order'] = array('Empleado.id' => 'ASC');
 		$this->redirectToNamed();
 		$conditions = array();
 				
@@ -74,8 +75,8 @@ class EmpleadosController extends AppController {
 
 			if ($this->Empleado->save($this->data)) {
 				$this->Session->setFlash('El empleado ha sido grabado.', 'default', array('class' => 'alert alert-success'));
-				$inserted_id = $this->Inscripcion->id;
-					$this->redirect(array('action' => 'view', $inserted_id));
+				$inserted_id = $this->Empleado->id;
+				$this->redirect(array('action' => 'view', $inserted_id));
 			} else {
 				$this->Session->setFlash('El empleado no fué grabado. Intentelo nuevamente.', 'default', array('class' => 'alert alert-danger'));
 			}

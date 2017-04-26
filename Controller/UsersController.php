@@ -101,7 +101,7 @@ class UsersController extends AppController {
 			$this->User->create();
 			if ($this->User->save($this->data)) {
                 $this->Session->setFlash('El Usuario ha sido grabado', 'default', array('class' => 'alert alert-success'));
-				$inserted_id = $this->Usuario->id;
+				$inserted_id = $this->User->id;
 				$this->redirect(array('action' => 'view', $inserted_id));
 			} else {
 				$this->Session->setFlash('El Usuario no fue grabado. Intentelo nuevamente.', 'default', array('class' => 'alert alert-danger'));
@@ -125,11 +125,8 @@ class UsersController extends AppController {
 		  }
 			if ($this->User->save($this->data)) {
 				$this->Session->setFlash('El usuario ha sido grabado', 'default', array('class' => 'alert alert-success'));
-				$this->redirect(array('action' => 'index'));
-				/*
-				$inserted_id = $this->Usuario->id;
+				$inserted_id = $this->User->id;
 				$this->redirect(array('action' => 'view', $inserted_id));
-				*/
 			} else {
 				$this->Session->setFlash('El usuario no ha sido grabado. Intentelo nuevamente.', 'default', array('class' => 'alert alert-danger'));
 			}

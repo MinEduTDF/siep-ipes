@@ -83,7 +83,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'traes_cens',
+		'database' => 'traes_ipes',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
@@ -94,7 +94,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'test_traes_cens',
+		'database' => 'test_traes_ipes',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

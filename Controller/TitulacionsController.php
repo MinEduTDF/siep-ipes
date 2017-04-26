@@ -8,8 +8,11 @@ class TitulacionsController extends AppController {
 
 	function index() {
 		$this->Titulacion->recursive = 0;
-		$this->set('titulacions', $this->paginate());
 		$titulacions = $this->Titulacion->find('list', array('fields'=>array('id', 'nombre')));
+		$userCentroId = $this->getUserCentroId();
+		if($this->Auth->user('role') === 'admin') {
+			$this->paginate['Titulacion']['conditions'] = array('Titulacion.centro_id' => $userCentroId);
+		}
 		$this->redirectToNamed();
 		$conditions = array();
 

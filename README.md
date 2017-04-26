@@ -1,16 +1,13 @@
-# traes-ipes
+# siep-ipes
 
-Sistema nominal integral para los IPES.
+Sistema nominal integral para los CENS.
 
 Instalación:
 
-PASO 0: Instalar: servidores APACHE, MySQL y COMPOSER.
+PASO 0: Instalar: APACHE, MySQL y COMPOSER.
 
+PASO 1: Importar el archivo de base de datos ("traes_cens.sql").
 
-PASO 1: Clonar este repo en /www ó /htdocs.
+PASO 2: Clonar este repo en el directorio /www ó /htdocs.
 
-
-PASO 2: Ejecutar comando "composer install" en /htdocs/traac.
-
-
-PASO 3: Descargar TinyMCE (https://github.com/CakeDC/TinyMCE) en /htdocs/traes-ip/Plugin.
+PASO 3: Ejecutar comando "composer install" dentro del directorio del sistema /siep-ipes.

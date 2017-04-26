@@ -28,8 +28,8 @@
             <li><?php echo $this->Html->link(__('Alumnos'),'/alumnos'); ?></li>
             <li><?php echo $this->Html->link(__('Inscripciones'), '/inscripcions'); ?></li>
             <!--<li><?php echo $this->Html->link(__('Inasistencias'), '/inasistencias'); ?></li>
-            <li><?php echo $this->Html->link(__('Calificaciones'), '/notas'); ?></li>-->
-            <li><?php echo $this->Html->link(__('Mesa de Exámenes'), '/mesaexamens'); ?></li>
+            <li><?php echo $this->Html->link(__('Calificaciones'), '/notas'); ?></li>
+            <li><?php echo $this->Html->link(__('Mesa de Exámenes'), '/mesaexamens'); ?></li>-->
           </ul>
         </li>
       <?php endif; ?>
@@ -37,13 +37,14 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carga <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li><?php echo $this->Html->link(__('Titulaciones'),'/titulacions'); ?></li>
             <li><?php echo $this->Html->link(__('Secciones'), '/cursos'); ?></li>
             <li><?php echo $this->Html->link(__('Espacios'),'/materias'); ?></li>
             <li><?php echo $this->Html->link(__('Alumnos'),'/alumnos'); ?></li>
             <li><?php echo $this->Html->link(__('Inscripciones'), '/inscripcions'); ?></li>
             <!--<li><?php echo $this->Html->link(__('Inasistencias'), '/inasistencias'); ?></li>
-            <li><?php echo $this->Html->link(__('Calificaciones'), '/notas'); ?></li>-->
-            <li><?php echo $this->Html->link(__('Mesa de Exámenes'), '/mesaexamens'); ?></li>
+            <li><?php echo $this->Html->link(__('Calificaciones'), '/notas'); ?></li>
+            <li><?php echo $this->Html->link(__('Mesa de Exámenes'), '/mesaexamens'); ?></li>-->
           </ul>
         </li>
 		  <?php endif; ?>
@@ -52,6 +53,7 @@
           <ul class="dropdown-menu">
            <?php if($current_user['role'] == 'usuario'): ?> 
             <li><?php echo $this->Html->link(__('Instituciones'),'/centros'); ?></li>
+            <li><?php echo $this->Html->link(__('Titulaciones'),'/titulacions'); ?></li>
             <li><?php echo $this->Html->link(__('Secciones'),'/cursos'); ?></li>
             <li><?php echo $this->Html->link(__('Espacios'),'/materias'); ?></li>
             <li><?php echo $this->Html->link(__('Alumnos'),'/alumnos'); ?></li>

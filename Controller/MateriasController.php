@@ -38,13 +38,10 @@ class MateriasController extends AppController {
         if($this->Auth->user('role') === 'admin') {
 		$this->paginate['Materia']['conditions'] = array($centrosId => $userCentroId);
 		}
-		
-        $this->loadModel('Centro');
-        
+		$this->loadModel('Centro');
         $centros = $this->Centro->find('list', array('fields'=>array('sigla'), 'conditions' => array('id' => $centrosId)));
         $cursosId = $this->Materia->find('list', array('fields'=>array('curso_id')));
         $cursos = $this->Materia->Curso->find('list', array('fields'=>array('nombre_completo_curso'), 'conditions' => array('id' => $cursosId)));
-
 		$this->redirectToNamed();
 		$conditions = array();
 		
